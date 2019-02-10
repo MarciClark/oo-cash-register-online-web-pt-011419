@@ -3,9 +3,9 @@ class CashRegister
   attr_accessor :total, :items, :discount, :last_transaction_amount
   
   def initialize(discount = 0)
-    @@items = []
-    @@total = 0
-    @@discount = discount
+    @items = []
+    @total = 0
+    @discount = discount
   end 
 
   def add_item(title, price, quantity = 1)
